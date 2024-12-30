@@ -19,11 +19,11 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-2xl">
-                Développement Durable de l'Agriculture et de l'Élevage en Mauritanie.
+                Développement Durable de l&#39;Agriculture et de l&#39;Élevage en Mauritanie.
                 Formez-vous aux pratiques agricoles modernes et durables.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <button className="px-8 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5">
+                <button className="px-8 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full hover:shadow-lg transition-all duration-300">
                   Découvrir nos services
                 </button>
                 <button className="px-8 py-3 border-2 border-green-600 text-green-600 rounded-full hover:bg-green-50 transition-all duration-300">
@@ -39,7 +39,7 @@ export default function Home() {
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority
-                  className="object-cover rounded-2xl shadow-2xl group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover rounded-2xl shadow-2xl"
                   style={{ objectFit: 'cover' }}
                 />
               </div>
@@ -54,7 +54,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Nos Services</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Découvrez nos services spécialisés pour le développement agricole et l'élevage durable en Mauritanie
+              Découvrez nos services spécialisés pour le développement agricole et l&#39;élevage durable en Mauritanie
             </p>
           </div>
 
@@ -158,8 +158,8 @@ export default function Home() {
               </div>
               <div className="p-6">
                 <p className="text-gray-600">
-                  Formation et accompagnement dans les techniques modernes d'élevage. 
-                  Nous vous aidons à développer votre projet d'élevage de manière durable.
+                  Formation et accompagnement dans les techniques modernes d&#39;élevage. 
+                  Nous vous aidons à développer votre projet d&#39;élevage de manière durable.
                 </p>
                 <ul className="mt-4 space-y-2 text-gray-600">
                   <li className="flex items-center">
@@ -180,7 +180,7 @@ export default function Home() {
           </div>
 
           <div className="mt-12 text-center">
-            <button className="px-8 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5">
+            <button className="px-8 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full hover:shadow-lg transition-all duration-300">
               Découvrir nos programmes
             </button>
           </div>
@@ -188,18 +188,18 @@ export default function Home() {
       </section>
 
       {/* Section À propos avec design moderne */}
-      <section id="about" className="py-20 bg-gray-50">
+      <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Notre Histoire</h2>
               <p className="text-gray-600 mb-6">
-                Agro-Past est né d'une vision et d'une volonté commune de promouvoir le développement
+                Agro-Past est né d&#39;une vision et d&#39;une volonté commune de promouvoir le développement
                 durable de systèmes de production agricole et pastorale en Mauritanie.
               </p>
               <p className="text-gray-600 mb-8">
-                Notre mission est de former et d'accompagner la nouvelle génération d'agriculteurs
-                et d'éleveurs, en mettant l'accent sur des pratiques durables et innovantes.
+                Notre mission est de former et d&#39;accompagner la nouvelle génération d&#39;agriculteurs
+                et d&#39;éleveurs, en mettant l&#39;accent sur des pratiques durables et innovantes.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-white p-6 rounded-xl shadow-sm">
@@ -220,7 +220,7 @@ export default function Home() {
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   priority
-                  className="object-cover rounded-2xl shadow-xl group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover rounded-2xl shadow-xl"
                   style={{ objectFit: 'cover' }}
                 />
               </div>
@@ -230,7 +230,7 @@ export default function Home() {
       </section>
 
       {/* Section Contact avec design moderne */}
-      <section id="contact" className="py-20 bg-white">
+      <section id="contact" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">Contactez-nous</h2>
@@ -264,7 +264,7 @@ export default function Home() {
                   ></textarea>
                 </div>
               </div>
-              <button className="mt-8 px-8 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5">
+              <button className="mt-8 px-8 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full hover:shadow-lg transition-all duration-300">
                 Envoyer le message
               </button>
             </div>
@@ -272,18 +272,5 @@ export default function Home() {
         </div>
       </section>
     </main>
-  )
-}
-
-// Composant Card pour les services avec design moderne
-function ServiceCard({ title, description, gradient }: { title: string, description: string, gradient: string }) {
-  return (
-    <div className="group relative bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
-      <div className={`absolute inset-0 bg-gradient-to-r ${gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
-      <div className="relative z-10">
-        <h3 className="text-xl font-semibold text-gray-900 mb-4">{title}</h3>
-        <p className="text-gray-600">{description}</p>
-      </div>
-    </div>
   )
 }
