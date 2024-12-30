@@ -52,6 +52,9 @@ export default function Navbar() {
               <Link href="/#formation" className="text-white hover:text-green-100 transition-colors duration-300">
                 Formation
               </Link>
+              <Link href="/#loisirs" className="text-white hover:text-green-100 transition-colors duration-300">
+                Loisirs
+              </Link>
               <Link href="/#about" className="text-white hover:text-green-100 transition-colors duration-300">
                 À Propos
               </Link>
@@ -72,6 +75,9 @@ export default function Navbar() {
               </Link>
               <Link href="/#formation" className="text-white hover:text-green-100 transition-colors duration-300 block">
                 Formation
+              </Link>
+              <Link href="/#loisirs" className="text-white hover:text-green-100 transition-colors duration-300 block">
+                Loisirs
               </Link>
               <Link href="/#about" className="text-white hover:text-green-100 transition-colors duration-300 block">
                 À Propos

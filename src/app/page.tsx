@@ -187,6 +187,174 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Section Loisirs avec design moderne */}
+      <section id="loisirs" className="py-20 bg-gradient-to-b from-white to-green-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Espace Loisirs & Détente
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Un environnement paisible et ludique pour toute la famille
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Carte Piscine */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl">
+              <div className="relative h-[400px]">
+                <Image
+                  src="/piscine.jpg"
+                  alt="Piscine"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 className="text-2xl font-bold mb-2">Piscine</h3>
+                  <p className="text-sm text-gray-200">
+                    Une piscine moderne et sécurisée pour se rafraîchir en famille
+                  </p>
+                  <ul className="mt-4 space-y-2">
+                    <li className="flex items-center space-x-2">
+                      <svg className="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Surveillance qualifiée</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <svg className="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Zones adaptées aux enfants</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Carte Pelouse */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl">
+              <div className="relative h-[400px]">
+                <Image
+                  src="/pelouse.jpg"
+                  alt="Pelouse"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 className="text-2xl font-bold mb-2">Espace Vert</h3>
+                  <p className="text-sm text-gray-200">
+                    Une vaste pelouse de gazon naturel pour vos activités en plein air
+                  </p>
+                  <ul className="mt-4 space-y-2">
+                    <li className="flex items-center space-x-2">
+                      <svg className="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Aire de jeux sécurisée</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <svg className="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Espaces ombragés</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Carte Restaurant */}
+            <div className="group relative overflow-hidden rounded-2xl shadow-xl">
+              <div className="relative h-[400px]">
+                <Image
+                  src="/restaurant.jpg"
+                  alt="Restaurant"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 className="text-2xl font-bold mb-2">Restaurant Kids</h3>
+                  <p className="text-sm text-gray-200">
+                    Un espace restauration adapté aux enfants avec des menus équilibrés
+                  </p>
+                  <ul className="mt-4 space-y-2">
+                    <li className="flex items-center space-x-2">
+                      <svg className="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Menus enfants variés</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <svg className="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span>Animations repas</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Section des caractéristiques */}
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="text-green-600 mb-4">
+                <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-2">Horaires Flexibles</h4>
+              <p className="text-gray-600">Ouvert tous les jours de 9h à 19h</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="text-green-600 mb-4">
+                <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-2">Sécurité Maximale</h4>
+              <p className="text-gray-600">Personnel qualifié et équipements aux normes</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="text-green-600 mb-4">
+                <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-2">Confort Optimal</h4>
+              <p className="text-gray-600">Vestiaires, douches et casiers sécurisés</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="text-green-600 mb-4">
+                <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h4 className="text-xl font-semibold text-gray-900 mb-2">Tarifs Attractifs</h4>
+              <p className="text-gray-600">Formules adaptées à tous les budgets</p>
+            </div>
+          </div>
+
+          {/* Bouton de réservation */}
+          <div className="text-center mt-12">
+            <button className="px-8 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full hover:shadow-lg transition-all duration-300">
+              Réserver une activité
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Section Formation avec design moderne */}
       <section id="formation" className="py-20 bg-white">
         <div className="container mx-auto px-6">
