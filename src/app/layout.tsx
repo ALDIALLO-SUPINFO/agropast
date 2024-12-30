@@ -47,8 +47,26 @@ export default function RootLayout({
               <div>
                 <h4 className="font-semibold mb-4">Contact</h4>
                 <ul className="space-y-2 text-green-100/80">
-                  <li>Email: contact@agropast.mr</li>
-                  <li>Tél: +222 XX XX XX XX</li>
+                  <li>
+                    <a href="mailto:agropast129@gmail.com" className="hover:text-white transition-colors">
+                      Email: agropast129@gmail.com
+                    </a>
+                  </li>
+                  <li>Tél: 
+                    <a href="tel:+22236744568" className="hover:text-white transition-colors ml-1">
+                      +222 36 74 45 68
+                    </a>
+                  </li>
+                  <li className="pl-8">
+                    <a href="tel:+22244559801" className="hover:text-white transition-colors">
+                      +222 44 55 98 01
+                    </a>
+                  </li>
+                  <li className="pl-8">
+                    <a href="tel:+22249503115" className="hover:text-white transition-colors">
+                      +222 49 50 31 15
+                    </a>
+                  </li>
                   <li>Nouakchott, Mauritanie</li>
                 </ul>
               </div>
