@@ -308,7 +308,7 @@ export default function Home() {
             <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="text-green-600 mb-4">
                 <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
               <h4 className="text-xl font-semibold text-gray-900 mb-2">Horaires Flexibles</h4>
@@ -355,6 +355,172 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Section Production Bio */}
+      <section id="bio" className="py-20 bg-gradient-to-b from-green-50 to-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Notre Production Biologique
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Des produits frais, sains et locaux, cultivés dans le respect de l&#39;environnement
+            </p>
+          </div>
+
+          {/* Maraîchage Bio */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl group">
+              <Image
+                src="/maraichage.jpg"
+                alt="Maraîchage biologique"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            </div>
+
+            <div className="space-y-8">
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                  <svg className="w-8 h-8 text-green-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                  </svg>
+                  Maraîchage Biologique
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Nos légumes bio sont cultivés avec passion, sans pesticides ni produits chimiques, 
+                  pour vous offrir le meilleur de la nature.
+                </p>
+                <ul className="space-y-4">
+                  <li className="flex items-start space-x-3">
+                    <svg className="w-6 h-6 text-green-600 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-gray-600">
+                      <strong className="text-gray-900">Production locale :</strong> Légumes frais de saison
+                    </span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <svg className="w-6 h-6 text-green-600 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-gray-600">
+                      <strong className="text-gray-900">Méthodes naturelles :</strong> Agriculture biologique certifiée
+                    </span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <svg className="w-6 h-6 text-green-600 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-gray-600">
+                      <strong className="text-gray-900">Vente directe :</strong> Du producteur au consommateur
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="grid grid-cols-2 gap-6">
+                <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                  <h4 className="text-xl font-semibold text-gray-900 mb-2">Variétés Locales</h4>
+                  <p className="text-gray-600">Adaptées au climat mauritanien</p>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                  <h4 className="text-xl font-semibold text-gray-900 mb-2">Récolte Fraîche</h4>
+                  <p className="text-gray-600">Disponible chaque semaine</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Élevage Bio */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20">
+            <div className="order-2 lg:order-1 space-y-8">
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
+                  <svg className="w-8 h-8 text-green-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                  </svg>
+                  Élevage de Poulets Bio
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Nos poulets sont élevés en plein air, nourris avec des aliments bio et bénéficient 
+                  d&#39;un espace optimal pour leur bien-être.
+                </p>
+                <ul className="space-y-4">
+                  <li className="flex items-start space-x-3">
+                    <svg className="w-6 h-6 text-green-600 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-gray-600">
+                      <strong className="text-gray-900">Élevage en liberté :</strong> Accès à l&#39;extérieur
+                    </span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <svg className="w-6 h-6 text-green-600 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-gray-600">
+                      <strong className="text-gray-900">Alimentation naturelle :</strong> 100% bio et locale
+                    </span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <svg className="w-6 h-6 text-green-600 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-gray-600">
+                      <strong className="text-gray-900">Qualité supérieure :</strong> Chair ferme et savoureuse
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="grid grid-cols-2 gap-6">
+                <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                  <h4 className="text-xl font-semibold text-gray-900 mb-2">Bien-être animal</h4>
+                  <p className="text-gray-600">Respect des normes bio</p>
+                </div>
+                <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                  <h4 className="text-xl font-semibold text-gray-900 mb-2">Traçabilité</h4>
+                  <p className="text-gray-600">Suivi complet garanti</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="order-1 lg:order-2 relative h-[500px] rounded-2xl overflow-hidden shadow-2xl group">
+              <Image
+                src="/poulets.jpg"
+                alt="Élevage de poulets bio"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            </div>
+          </div>
+
+          {/* Section Commander */}
+          <div className="mt-20 text-center">
+            <div className="bg-white p-8 rounded-2xl shadow-lg max-w-3xl mx-auto">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Commandez Nos Produits Bio
+              </h3>
+              <p className="text-gray-600 mb-8">
+                Profitez de nos produits frais et bio livrés directement chez vous ou à retirer sur place
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <button className="px-8 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full hover:shadow-lg transition-all duration-300">
+                  Commander en ligne
+                </button>
+                <button className="px-8 py-3 border-2 border-green-600 text-green-600 rounded-full hover:bg-green-50 transition-all duration-300">
+                  Voir nos tarifs
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Section Formation avec design moderne */}
       <section id="formation" className="py-20 bg-white">
         <div className="container mx-auto px-6">
@@ -374,6 +540,7 @@ export default function Home() {
                 alt="Salle de formation"
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
+                priority
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
                 style={{ objectFit: 'cover' }}
               />
@@ -434,18 +601,12 @@ export default function Home() {
                 <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                   <div className="text-green-600 mb-4">
                     <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <h4 className="text-xl font-semibold text-gray-900 mb-2">Support Technique</h4>
                   <p className="text-gray-600">Assistance technique et matériel pédagogique fourni</p>
                 </div>
-              </div>
-
-              <div className="text-center">
-                <button className="px-8 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full hover:shadow-lg transition-all duration-300">
-                  Réserver la salle
-                </button>
               </div>
             </div>
           </div>

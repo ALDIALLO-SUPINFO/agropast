@@ -55,6 +55,9 @@ export default function Navbar() {
               <Link href="/#loisirs" className="text-white hover:text-green-100 transition-colors duration-300">
                 Loisirs
               </Link>
+              <Link href="/#bio" className="text-white hover:text-green-100 transition-colors duration-300">
+                Production Bio
+              </Link>
               <Link href="/#about" className="text-white hover:text-green-100 transition-colors duration-300">
                 À Propos
               </Link>
@@ -78,6 +81,9 @@ export default function Navbar() {
               </Link>
               <Link href="/#loisirs" className="text-white hover:text-green-100 transition-colors duration-300 block">
                 Loisirs
+              </Link>
+              <Link href="/#bio" className="text-white hover:text-green-100 transition-colors duration-300 block">
+                Production Bio
               </Link>
               <Link href="/#about" className="text-white hover:text-green-100 transition-colors duration-300 block">
                 À Propos
