@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 import './globals.css'
 import Navbar from './components/Navbar'
 
@@ -37,9 +38,9 @@ export default function RootLayout({
               <div>
                 <h4 className="font-semibold mb-4">Liens Rapides</h4>
                 <ul className="space-y-2">
-                  <li><a href="/#services" className="text-green-100/80 hover:text-white transition-colors">Nos Services</a></li>
-                  <li><a href="/#about" className="text-green-100/80 hover:text-white transition-colors">À Propos</a></li>
-                  <li><a href="/#contact" className="text-green-100/80 hover:text-white transition-colors">Contact</a></li>
+                  <li><Link href="/#services" className="text-green-100/80 hover:text-white transition-colors">Nos Services</Link></li>
+                  <li><Link href="/#about" className="text-green-100/80 hover:text-white transition-colors">À Propos</Link></li>
+                  <li><Link href="/#contact" className="text-green-100/80 hover:text-white transition-colors">Contact</Link></li>
                 </ul>
               </div>
               
@@ -78,19 +79,5 @@ export default function RootLayout({
         </footer>
       </body>
     </html>
-  )
-}
-
-// Composant NavLink réutilisable
-function NavLink({ href, children, mobile = false }: { href: string; children: React.ReactNode; mobile?: boolean }) {
-  return (
-    <a
-      href={href}
-      className={`${
-        mobile ? 'block' : 'inline-block'
-      } text-white hover:text-green-100 transition-colors duration-300`}
-    >
-      {children}
-    </a>
   )
 }

@@ -2,20 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-
-// Composant NavLink réutilisable
-function NavLink({ href, children, mobile = false }: { href: string; children: React.ReactNode; mobile?: boolean }) {
-  return (
-    <a
-      href={href}
-      className={`${
-        mobile ? 'block' : 'inline-block'
-      } text-white hover:text-green-100 transition-colors duration-300`}
-    >
-      {children}
-    </a>
-  )
-}
+import Link from 'next/link'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -27,7 +14,7 @@ export default function Navbar() {
         <div className="container mx-auto px-6">
           <div className="relative flex items-center justify-between h-20">
             {/* Logo */}
-            <a href="/" className="flex items-center space-x-3">
+            <Link href="/" className="flex items-center space-x-3">
               <div className="relative w-12 h-12 bg-white/10 rounded-full overflow-hidden">
                 <Image
                   src="/logo.png"
@@ -39,7 +26,7 @@ export default function Navbar() {
                 />
               </div>
               <span className="text-white font-bold text-xl">Agro-Past</span>
-            </a>
+            </Link>
 
             {/* Menu pour mobile */}
             <div className="md:hidden">
@@ -59,9 +46,15 @@ export default function Navbar() {
 
             {/* Menu pour desktop */}
             <div className="hidden md:flex items-center space-x-8">
-              <NavLink href="/#services">Nos Services</NavLink>
-              <NavLink href="/#about">À Propos</NavLink>
-              <NavLink href="/#contact">Contact</NavLink>
+              <Link href="/#services" className="text-white hover:text-green-100 transition-colors duration-300">
+                Nos Services
+              </Link>
+              <Link href="/#about" className="text-white hover:text-green-100 transition-colors duration-300">
+                À Propos
+              </Link>
+              <Link href="/#contact" className="text-white hover:text-green-100 transition-colors duration-300">
+                Contact
+              </Link>
               <button className="px-6 py-2 bg-white text-green-700 rounded-full font-medium hover:bg-green-50 transition-colors duration-300">
                 Nous Contacter
               </button>
@@ -71,9 +64,15 @@ export default function Navbar() {
           {/* Menu mobile */}
           <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} pb-4`}>
             <div className="flex flex-col space-y-4">
-              <NavLink href="/#services" mobile>Nos Services</NavLink>
-              <NavLink href="/#about" mobile>À Propos</NavLink>
-              <NavLink href="/#contact" mobile>Contact</NavLink>
+              <Link href="/#services" className="text-white hover:text-green-100 transition-colors duration-300 block">
+                Nos Services
+              </Link>
+              <Link href="/#about" className="text-white hover:text-green-100 transition-colors duration-300 block">
+                À Propos
+              </Link>
+              <Link href="/#contact" className="text-white hover:text-green-100 transition-colors duration-300 block">
+                Contact
+              </Link>
               <button className="px-6 py-2 bg-white text-green-700 rounded-full font-medium hover:bg-green-50 transition-colors duration-300 w-full">
                 Nous Contacter
               </button>
