@@ -2,19 +2,18 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 // Composant NavLink réutilisable
 function NavLink({ href, children, mobile = false }: { href: string; children: React.ReactNode; mobile?: boolean }) {
   return (
-    <Link
+    <a
       href={href}
       className={`${
         mobile ? 'block' : 'inline-block'
       } text-white hover:text-green-100 transition-colors duration-300`}
     >
       {children}
-    </Link>
+    </a>
   )
 }
 
@@ -28,7 +27,7 @@ export default function Navbar() {
         <div className="container mx-auto px-6">
           <div className="relative flex items-center justify-between h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-3">
+            <a href="/" className="flex items-center space-x-3">
               <div className="relative w-12 h-12 bg-white/10 rounded-full overflow-hidden">
                 <Image
                   src="/logo.png"
@@ -40,7 +39,7 @@ export default function Navbar() {
                 />
               </div>
               <span className="text-white font-bold text-xl">Agro-Past</span>
-            </Link>
+            </a>
 
             {/* Menu pour mobile */}
             <div className="md:hidden">
@@ -83,7 +82,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Ajout d'un espace pour compenser la navbar fixed */}
+      {/* Ajout d&#39;un espace pour compenser la navbar fixed */}
       <div className="h-20"></div>
     </>
   )
