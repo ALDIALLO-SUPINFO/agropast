@@ -187,6 +187,103 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Section Formation avec design moderne */}
+      <section id="formation" className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Notre Espace de Formation
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Une salle moderne et équipée pour vos formations théoriques et pratiques
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl group">
+              <Image
+                src="/formation-room.jpg"
+                alt="Salle de formation"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
+                style={{ objectFit: 'cover' }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            </div>
+
+            <div className="space-y-8">
+              <div className="bg-green-50 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  Salle de Formation Polyvalente
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Notre salle de formation moderne est spécialement conçue pour accueillir les ONG, 
+                  associations et coopératives dans les meilleures conditions d&#39;apprentissage.
+                </p>
+                <ul className="space-y-4">
+                  <li className="flex items-start space-x-3">
+                    <svg className="w-6 h-6 text-green-600 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-gray-600">
+                      <strong className="text-gray-900">Formation théorique :</strong> Équipements audiovisuels modernes, 
+                      tableaux interactifs et connexion internet haut débit
+                    </span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <svg className="w-6 h-6 text-green-600 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-gray-600">
+                      <strong className="text-gray-900">Formation pratique :</strong> Accès à notre ferme pédagogique 
+                      pour des démonstrations concrètes
+                    </span>
+                  </li>
+                  <li className="flex items-start space-x-3">
+                    <svg className="w-6 h-6 text-green-600 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span className="text-gray-600">
+                      <strong className="text-gray-900">Capacité d&#39;accueil :</strong> Jusqu&#39;à 30 personnes, 
+                      disposition modulable selon vos besoins
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="grid grid-cols-2 gap-6">
+                <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                  <div className="text-green-600 mb-4">
+                    <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                  </div>
+                  <h4 className="text-xl font-semibold text-gray-900 mb-2">Environnement Optimal</h4>
+                  <p className="text-gray-600">Climatisation, éclairage naturel, espace de pause</p>
+                </div>
+
+                <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                  <div className="text-green-600 mb-4">
+                    <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                    </svg>
+                  </div>
+                  <h4 className="text-xl font-semibold text-gray-900 mb-2">Support Technique</h4>
+                  <p className="text-gray-600">Assistance technique et matériel pédagogique fourni</p>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <button className="px-8 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full hover:shadow-lg transition-all duration-300">
+                  Réserver la salle
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Section À propos avec design moderne */}
       <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-6">

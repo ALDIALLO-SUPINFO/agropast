@@ -49,6 +49,9 @@ export default function Navbar() {
               <Link href="/#services" className="text-white hover:text-green-100 transition-colors duration-300">
                 Nos Services
               </Link>
+              <Link href="/#formation" className="text-white hover:text-green-100 transition-colors duration-300">
+                Formation
+              </Link>
               <Link href="/#about" className="text-white hover:text-green-100 transition-colors duration-300">
                 À Propos
               </Link>
@@ -66,6 +69,9 @@ export default function Navbar() {
             <div className="flex flex-col space-y-4">
               <Link href="/#services" className="text-white hover:text-green-100 transition-colors duration-300 block">
                 Nos Services
+              </Link>
+              <Link href="/#formation" className="text-white hover:text-green-100 transition-colors duration-300 block">
+                Formation
               </Link>
               <Link href="/#about" className="text-white hover:text-green-100 transition-colors duration-300 block">
                 À Propos
